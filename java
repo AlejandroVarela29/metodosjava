@@ -206,7 +206,6 @@ public class Main2{
     static double longitud,altura;
     //area lateral de un prisma 
     public static void areaLateralPrisma(){
-
        
         System.out.println("Cual es el numero de lados del prisma?");
         numLados = pedirEnteros(numLados);
@@ -233,11 +232,11 @@ public class Main2{
     //area lateral de un cilindro 
     public static void areaLateralCilindro(){
 
-            System.out.println("Cual es el radio del cilindro?");
-            radio = pedirDoubles(radio);
+        System.out.println("Cual es el radio del cilindro?");
+        radio = pedirDoubles(radio);
 
-            System.out.println("Cual es el la altura del cilindro?");
-            altura = pedirDoubles(altura);
+        System.out.println("Cual es el la altura del cilindro?");
+        altura = pedirDoubles(altura);
         
         if(numLados <0 && longitud <0 && altura <0 ){
             System.out.println("No has ingresado los valores correctamente");
@@ -258,8 +257,7 @@ public class Main2{
        
         System.out.println("Cual es el la altura de la piramide?");
         altura = pedirDoubles(altura);
-        
-        
+                
         System.out.println("Cual es el la distancia de los lados?");
         dLados = pedirDoubles(dLados);
     
@@ -281,7 +279,6 @@ public class Main2{
 
     //Area lateral de un cono
     public static void areaLateralCono(){
-
         
         System.out.println("Cual es la altura?");
         altura = pedirDoubles(altura);
@@ -306,7 +303,6 @@ public class Main2{
     //area lateral de un prisma
     public static void areaTotalPrisma(){
 
-        
         System.out.println("Cual es el area lateral");
         areaLateral = pedirDoubles(areaLateral);
 
@@ -330,16 +326,13 @@ public class Main2{
 
     //Area total de un cilindro
     public static void areaTotalCilindro(){
-
        
         System.out.println("Cual es el radios?");
         radio = pedirDoubles(radio);
 
-
         System.out.println("Cual es el area lateral?");
         areaLateral = pedirDoubles(areaLateral);
         
-
         if(numLados <0 && longitud <0 && altura <0 ){
             System.out.println("No has ingresado los valores correctamente");
         }else{
@@ -353,7 +346,6 @@ public class Main2{
     static double aBase;
     //area total de una piramide
     public static void areaTotalPiramide(){
-
         
         System.out.println("Cual es el area lateral?");
         areaLateral = pedirDoubles(areaLateral);
@@ -391,7 +383,6 @@ public class Main2{
 
     //volumen total de un prisma
     public static void volumenTotalPrisma(){
-
         
         System.out.println("Cual es el perimetro?");
         perimetro = pedirDoubles(perimetro);
@@ -421,7 +412,6 @@ public class Main2{
         System.out.println("Cual es la altura?");
         altura = pedirDoubles(altura);
         
-
         if(numLados <0 && longitud <0 && altura <0 ){
             System.out.println("No has ingresado los valores correctamente");
         }else{
@@ -476,9 +466,7 @@ public class Main2{
     
         System.out.println("Cual es el radio ");
         radio = pedirDoubles(radio);
-        
                     
-
         if(numLados <0 && longitud <0 && altura <0 ){
             System.out.println("No has ingresado los valores correctamente");
         }else{
@@ -514,11 +502,9 @@ public class Main2{
         System.out.println("cual es el radio");
         radioMayor=pedirDoubles(radioMayor);
        
-        
         System.out.println("cual es la altura");
         altura= pedirDoubles(altura);
         
-
         if(numLados <0 && longitud <0 && altura <0 ){
             System.out.println("No has ingresado los valores correctamente");
         }else{
@@ -534,10 +520,8 @@ public class Main2{
         System.out.println("Cual es la altura");
         altura=pedirDoubles(altura);
 
-        
         System.out.println("Cual es el radio");
         radioMayor= pedirDoubles(radioMayor);
-        
 
         volumenZonaEsferica =( Math.PI * altura * (Math.pow(altura, 2) * (3 * Math.pow(radioMayor, 2)) * (3 * Math.pow(radioMayor,2)))) / 6 ;
 
@@ -549,32 +533,29 @@ public class Main2{
 
         double volumenCasqueteEsferico;
 
-        System.out.println("Se calculara el volumen de el casquete esferico");
-            
+        System.out.println("Se calculara el volumen de el casquete esferico");        
     
         System.out.println("Cual es el radio");
         radioMayor=pedirDoubles(radioMayor);
        
         System.out.println("Cual es la altura");
         altura=pedirDoubles(altura);
-        
-
+    
         volumenCasqueteEsferico = (Math.PI * altura * ((3 * radioMayor) - altura)) / 3;
 
         System.out.println("El volumen del casuqete esferico es " + volumenCasqueteEsferico);
     }
 
+    static double areaHusoEsferico;
     //Huso esferico 
     public static void husoEsferico(){
 
-        double areaHusoEsferico, numeroDeGrados=0;
-
         System.out.println("Se calculara el huso esferico ");
 
-        
         System.out.println("Cual es radio");
         radio=pedirDoubles(radio);
         
+        //hacer un metodo para este 
         do{
         System.out.println("Cual es el numero de grado ");
         numeroDeGrados=pedirDoubles(numeroDeGrados);
@@ -585,13 +566,11 @@ public class Main2{
         System.out.println("El huso esferico es " + areaHusoEsferico);
     }
 
+    static double numeroDeGrados=0,volumenCunaEsferica;
     //cuna esferica
-    public static void CunaEsferica(){
-
-        double numeroDeGrados=0,volumenCunaEsferica;
+    public static void CunaEsferica(){        
 
         System.out.println("Se calculara la cuna esferica ");
-
         
         System.out.println("Cual es el radio");
         radio=pedirDoubles(radio);
@@ -606,14 +585,12 @@ public class Main2{
         System.out.println("El volumen de la cuna esferica es " + volumenCunaEsferica);
     }
 
+    static double  radioMenor=0, generatriz, bBaseMayor=0, bBaseMenor=0, VolumenTroncoCono;
     //Tronco Cono
     public static void troncoCono(){
 
-        double  radioMenor=0, generatriz, areaLateral, areaTotal, bBaseMayor=0, bBaseMenor=0, VolumenTroncoCono;
-
         System.out.println("Se calculara el area lateral del tronco de un cono");
 
-        
         System.out.println("Cual es la altura");
         altura=pedirDoubles(altura);
 
@@ -632,10 +609,8 @@ public class Main2{
 
         System.out.println("se calculara el area total del tronco de un cono ");
 
-        
         System.out.println("cual es la base menor de b");
         bBaseMenor=pedirDoubles(bBaseMenor);
-        
         
         System.out.println("cual es la base mayor de b");
         bBaseMayor=pedirDoubles(bBaseMayor);
@@ -647,7 +622,6 @@ public class Main2{
         System.out.println("");
 
         System.out.println("Se calcular el volumen de el tronco de un cono ");
-
     
         System.out.println("Cual es la altura");
         altura=pedirDoubles(altura);
@@ -658,7 +632,6 @@ public class Main2{
         System.out.println("Cual es el radio  mayor");
         radioMayor=pedirDoubles(radioMayor);
         
-
         VolumenTroncoCono = ((0.33) * (Math.PI * altura) * (Math.pow(radioMayor, 2) + Math.pow(radioMenor, 2) +radioMayor * radioMenor));
         
         System.out.println("El volumen del tronco del cono es " + VolumenTroncoCono);
@@ -668,27 +641,23 @@ public class Main2{
     //tronco piramide
     public static void troncoPiramide(){
 
-        
-
         System.out.println("Se calculara el area lateral del tronco de una piramide ");
 
-        
-            System.out.println("Cual es la base mayor de p");
-            pBaseMayor=pedirDoubles(pBaseMayor);
+        System.out.println("Cual es la base mayor de p");
+        pBaseMayor=pedirDoubles(pBaseMayor);
             
-            System.out.println("Cual es la base menor de p");
-            pBaseMenor=pedirDoubles(pBaseMenor);
+        System.out.println("Cual es la base menor de p");
+        pBaseMenor=pedirDoubles(pBaseMenor);
                 
-            System.out.println("Cual es el apotema base menor");
-            apotemaBaseMenor=pedirDoubles(apotemaBaseMenor);
+        System.out.println("Cual es el apotema base menor");
+        apotemaBaseMenor=pedirDoubles(apotemaBaseMenor);
 
-            System.out.println("Cual es el apotema base mayor");
-            apotemaBaseMayor=pedirDoubles(apotemaBaseMayor);
+        System.out.println("Cual es el apotema base mayor");
+        apotemaBaseMayor=pedirDoubles(apotemaBaseMayor);
 
-            System.out.println("Cual es la altura");
-            altura=pedirDoubles(altura);
+        System.out.println("Cual es la altura");
+        altura=pedirDoubles(altura);
         
-
         apotemaTroncoPiramide = Math.sqrt(Math.pow(altura, 2) - Math.pow(apotemaBaseMayor - apotemaBaseMenor, 2) );
         areaLateral = ((pBaseMayor + pBaseMenor) / 2) * apotemaTroncoPiramide;
 
@@ -698,14 +667,12 @@ public class Main2{
 
         System.out.println("Se calculara el area total del tronco de la piramide");
 
-    
-       System.out.println("Cual es la base mayor de a");
+        System.out.println("Cual es la base mayor de a");
         aBaseMayor=pedirDoubles(aBaseMayor);
 
         System.out.println("Cual es la base menor de a");
         aBaseMenor=pedirDoubles(aBaseMenor); 
         
-
         areaTotal = areaLateral + aBaseMayor + aBaseMenor;
 
         System.out.println("El area total es " + areaTotal);
@@ -713,40 +680,31 @@ public class Main2{
         System.out.println("");
 
         System.out.println("Se calculara el volumen de la tronco de la piramide");
+       
+        System.out.println("Cual es la base mayor de a");
+        aBaseMayor=pedirDoubles(aBaseMayor);
+        
+        System.out.println("Cual es la base menor de a");
+        aBaseMenor=pedirDoubles(aBaseMenor);
 
-        do{
-            System.out.println("Cual es la base mayor de a");
-            aBaseMayor=leer.nextDouble();
-        }while(aBaseMayor<0 || aBaseMayor>=50);
-
-        do{
-            System.out.println("Cual es la base menor de a");
-            aBaseMenor=leer.nextDouble();
-        }while(aBaseMenor<0 || aBaseMenor>=50);
-
-        do{
-            System.out.println("Cual es la altura");
-            altura=leer.nextDouble();
-        }while(altura<0 || altura>=50);
-
+        System.out.println("Cual es la altura");
+        altura=pedirDoubles(altura);
+        
         volumenTroncoPiramide = (0.33) * altura * (aBaseMayor + aBaseMenor + Math.sqrt(aBaseMayor * aBaseMenor));
 
         System.out.println("El volumen del tronco de la piramide es " + volumenTroncoPiramide);
     }
 
+    static double aristas, area, volumen;
+
     //tetraedro
     public static void tetraedo(){
-
         
-        double aristas, area, volumen, altura;
-
         System.out.println("Se calculara el area del tetraedro");
-
-        do{
-            System.out.println("Cual es arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-
+    
+        System.out.println("Cual es arista");
+        aristas=pedirDoubles(aristas);
+        
         area = Math.pow(aristas, 2) * Math.sqrt(3);
 
         System.out.println("El area del tetraedo es " + area);
@@ -755,11 +713,10 @@ public class Main2{
 
         System.out.println("Se calculara el volumen del tetraedo");
 
-        do{
-            System.out.println("Cual es arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-
+        
+        System.out.println("Cual es arista");
+        aristas=pedirDoubles(aristas);
+        
         volumen = (Math.sqrt(2) / 12) * Math.pow(aristas, 3);
 
         System.out.println("El volumen del tetraedo es " + volumen);
@@ -768,28 +725,25 @@ public class Main2{
 
         System.out.println("Se calculara la altura del tetraedo");
 
-        do{
-            System.out.println("Cual es arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-
+        
+        System.out.println("Cual es arista");
+        aristas=pedirDoubles(aristas);
+        
         altura = aristas * (Math.sqrt(6) / 3);
 
         System.out.println("La altura del tetraedo es " + altura);
     }
 
+    static double diagonal;
     //Hexaedro
     public static void hexaedro(){
 
-        double aristas, volumen, diagonal, area;
-
         System.out.println("Se calculara el area de un hexaedro");
 
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-
+        
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
+        
         area = 6 * Math.pow(aristas, 2);
 
         System.out.println("el area del hexaedro es " + area);
@@ -797,11 +751,9 @@ public class Main2{
         System.out.println("");
 
         System.out.println("Se calculara el volumen de un hexaedro ");
-
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
+        
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
 
         volumen = Math.pow(aristas, 3);
 
@@ -811,10 +763,8 @@ public class Main2{
 
         System.out.println("Se calculara la diagonal de un hexaedro");
 
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
 
         diagonal = aristas * Math.sqrt(3);
 
@@ -824,15 +774,11 @@ public class Main2{
     //Octoaedro
     public static void octoaedro(){
 
-        double area, volumen, aristas;
-
         System.out.println("Se calculara el area de un octaedro");
 
-        do{
-            System.out.println("Cual es el valor de las aristas");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-
+        System.out.println("Cual es el valor de las aristas");
+        aristas=pedirDoubles(aristas);
+        
         area = 2 * Math.pow(aristas, 2) * Math.sqrt(3);
 
         System.out.println("El area del octaedro es " + area);
@@ -841,10 +787,8 @@ public class Main2{
 
         System.out.println("Se calculara el volumen de un octaedro");
 
-        do{
-            System.out.println("Cual es el valor de las aristas");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
+        System.out.println("Cual es el valor de las aristas");
+        aristas=pedirDoubles(aristas);
 
         volumen = (Math.sqrt(2) / 3) * Math.pow(aristas, 3);
 
@@ -854,14 +798,11 @@ public class Main2{
     //Dodecaedro
     public static void dodecaedro(){
 
-        double area, aristas, volumen;
-
         System.out.println("Se calculara el area de un dodecaedro");
 
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
+        
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
 
         area = 3 * Math.pow(aristas, 3) * Math.sqrt(25 + 10 * Math.sqrt(5));
 
@@ -871,11 +812,9 @@ public class Main2{
 
         System.out.println("Se calculara el volumen de un dodecaedro");
 
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-
+        System.out.println("Cual es el valor de la arista");
+        aristas=leer.nextDouble();
+        
         volumen = (0.25) * (15 + 7 * Math.sqrt(5)) * Math.pow(aristas, 3);
 
         System.out.println("El volumen de un dodecaedro es " + volumen);
@@ -884,14 +823,10 @@ public class Main2{
     //Icosaedro
     public static void icosaedro(){
 
-        double aristas, area, volumen;
-
         System.out.println("Se calculara el area de icoseadro");
 
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
 
         area = 5 * Math.pow(aristas, 2) * Math.sqrt(3);
 
@@ -901,88 +836,69 @@ public class Main2{
 
         System.out.println("Se calculara el volumen de un icoseadro");
         
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-
+        System.out.println("Cual es el valor de la arista");
+        aristas=leer.nextDouble();
+    
         volumen = (0.41) * (3 + Math.sqrt(5)) * Math.pow(aristas, 3 );
 
         System.out.println("El volumen de un icoseadro es " + volumen);
     }
 
+    static double cara, base;
     //Ortoedro
     public static void ortoedro(){
 
-        double area, aristas, cara, base, volumen, diagonal;
-    
         System.out.println("Se calculara el area de un ortoedro");
-    
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
+            
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
 
-        do{
-            System.out.println("Cual es el valor de la base");
-            base=leer.nextDouble();
-        }while(base<0 || base>=50);
+        System.out.println("Cual es el valor de la base");
+        base=pedirDoubles(base);        
+    
+        System.out.println("Cual es el valor de la cara");
+        cara=pedirDoubles(cara);
+        
+        area = 2 * ((aristas * base) * (aristas * cara) * (base * cara));
+    
+        System.out.println("El area de un ortoedro es " + area);
 
-        do{
-            System.out.println("Cual es el valor de la cara");
-            cara=leer.nextDouble();
-        }while(cara<0 || cara>=50);
-
-            area = 2 * ((aristas * base) * (aristas * cara) * (base * cara));
+        System.out.println("");
     
-            System.out.println("El area de un ortoedro es " + area);
+        System.out.println("Se calculara el volumen de un ortoedro");
     
-            System.out.println("");
+        
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
     
-            System.out.println("Se calculara el volumen de un ortoedro");
+        System.out.println("Cual es el valor de la base");
+        base=pedirDoubles(base);
+            
+        System.out.println("Cual es el valor de la cara");
+        cara=leer.nextDouble();
+       
+        volumen = aristas * base * cara;
     
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
+        System.out.println("El volumen de un ortoedro es " + volumen);
     
-        do{
-            System.out.println("Cual es el valor de la base");
-            base=leer.nextDouble();
-        }while(base<0 || base>=50);
+        System.out.println("");
     
-        do{
-            System.out.println("Cual es el valor de la cara");
-            cara=leer.nextDouble();
-        }while(cara<0 || cara>=50);
+        System.out.println("Se calculara la diagonal de un ortoedro");
     
-            volumen = aristas * base * cara;
+        
+        System.out.println("Cual es el valor de la arista");
+        aristas=pedirDoubles(aristas);
+        
+        System.out.println("Cual es el valor de la base");
+        base=leer.nextDouble();
     
-            System.out.println("El volumen de un ortoedro es " + volumen);
+        
+        System.out.println("Cual es el valor de la cara");
+        cara=pedirDoubles(cara);
     
-            System.out.println("");
+        diagonal = Math.sqrt(Math.pow(aristas + base + cara, 2));
     
-            System.out.println("Se calculara la diagonal de un ortoedro");
-    
-        do{
-            System.out.println("Cual es el valor de la arista");
-            aristas=leer.nextDouble();
-        }while(aristas<0 || aristas>=50);
-    
-        do{
-            System.out.println("Cual es el valor de la base");
-            base=leer.nextDouble();
-        }while(base<0 || base>=50);
-    
-        do{
-            System.out.println("Cual es el valor de la cara");
-            cara=leer.nextDouble();
-        }while(cara<0 || cara>=50);
-    
-            diagonal = Math.sqrt(Math.pow(aristas + base + cara, 2));
-    
-            System.out.println("La diagonal de un ortoedero es " + diagonal);
+        System.out.println("La diagonal de un ortoedero es " + diagonal);
     }
     
 }
-
